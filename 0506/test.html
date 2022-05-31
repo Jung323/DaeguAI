@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- button 만들기 - 하는 일에 따라 type 지정 필요  
+        <input type="button | reset | submit | image">
+        <button type="button | reset | submit | image">
+    -->
+
+    <input type="button" onclick="alert('그냥 input버튼 입니다')" value="그냥 input 버튼">
+    <button type="button" onclick="alert('그냥 button버튼 입니다')">그냥 button 버튼</button>
+
+    <!-- reset 버튼: 폼에 입력된 내용을 지우고 초기화하는 버튼  -->
+    <form>
+        아이디 : <input type="text">
+        <input type="reset" value="입력한 내용 지우는 input">
+        <button type="reset">입력한 내용 지우는 button</button>
+    </form>
+
+    <!-- submit 버튼: 클릭하면 웹 브라우저가 폼 데이터를 웹 서버로 전송 -->
+    <form>
+        아이디 : <input type="text">
+        <input type="submit" value="입력한 내용 전송하는 input">
+        <button type="submit">입력한 내용 전송하는 button</button>
+    </form>
+
+    <!-- image 버튼 : 아무 기능 없음. 자바스크립트 코드로 활용 -->
+    <input type="image" width="100px" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAyMDAxMzBfMjIz%2FMDAxNTgwMzg1MjM1MDMy.eSt3JzpIW2ZJAd_-gBqBhM_eD7jxVC31YHXCk7zaLC8g.Vck9H7bw5imeyZ0Ftj9c9l9pWJSNybai2xue1Dgooh8g.JPEG%2FexternalFile.jpg&type=a340">
+    <button type="image" >
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAyMDAxMzBfMjIz%2FMDAxNTgwMzg1MjM1MDMy.eSt3JzpIW2ZJAd_-gBqBhM_eD7jxVC31YHXCk7zaLC8g.Vck9H7bw5imeyZ0Ftj9c9l9pWJSNybai2xue1Dgooh8g.JPEG%2FexternalFile.jpg&type=a340" width="100px">
+    </button>
+
+    <!--<input> <button> 왜 같이 쓰나? 
+        1)<button>은 자식태그를 가질 수 있다.
+        2)<button>은 CSS에서 가상선택자로 꾸며줄 수 있다.
+        ->input의 한계를 넘어 다양한 표현이 가능하다.    
+    -->
+
+    <form action="" method="">
+        아이디: <input type="text">
+        <input type="button" value="아이디중복확인">
+    </form>
+
+</body>
+</html> 
