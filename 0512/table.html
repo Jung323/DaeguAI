@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table{border:1px solid blue;
+        border-collapse:collapse;}
+        td,th{border:1px dotted blue;} */
+        table{border-collapse:collapse;}
+        td,th{width:100px;height:20px;
+            padding:10px; text-align: center;}
+        thead,tfoot{background:darkgray; color:aliceblue;}
+        td,tfoot th{border-bottom: 1px solid grey;}
+        tbody tr:nth-child(even){background:rgb(168, 168, 243);} /*짝수번째 행 배경색 지정*/
+        tbody tr:hover{background:pink;} /*마우스 올렸을 때*/
+        caption{caption-side:bottom; line-height: 2;}
+    </style>
+</head>
+<body>
+    <table>
+        <caption>1학기 성적</caption>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>김@@</td>
+                <td>80</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>이@@</td>
+                <td>60</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>최@@</td>
+                <td>70</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <th>210</th>
+                <th>240</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width: 100px; height: 100px;
+            border:1px solid black; margin:50px;}
+        #box{background-color: blue;
+            animation-name: change-bg;  /* @keyframes 이름*/
+            animation-duration: 3s; /*애니메이션 실행 시간*/
+            animation-iteration-count: infinite; /*애니메이션 반복 횟수*/
+            animation-direction:alternate;  /*애니메이션 종료 후 재시작 방향*/
+            animation-timing-function:ease-in-out;  /*애니메이션의 속도 곡선*/
+            /* 한번에 적기 */
+            /* animation:change-bg 3s 1s infinite alternate ease-in-out;*/
+        }
+
+        @keyframes change-bg{
+            from{background-color:blue;} /*0%*/
+            50%{background-origin: violet;}
+            to{background-color: yellow;
+                border-radius:50%;} /*100%*/
+        }  /*애니메이션이 바뀌는 지점 설정*/
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
