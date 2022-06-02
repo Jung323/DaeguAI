@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3:first-letter{color: red;} /* 첫 글자만 설정*/
+        /* cursor모양 pointer,help,move,progress 등등 */
+        li:hover{background-color: yellowgreen;cursor:pointer;} /*커서 올렸을때 설정*/
+        a:link{color:magenta}  /* 방문하지 않은 링크에 적용*/
+        a:visited{color:gray;}  /* 방문한 링크에 적용 */
+        a:active{color:green;}  /*마우스를 누른 상태에서 적용 */
+        input:focus{border: solid 5px aquamarine;}  /* */
+        li:first-child{color: red;}  /* 첫번째 자식 태그에 적용 */
+        li:last-child{color: rgb(254, 175, 175);}   /* 마지막 자식 태그에 적용 */
+        li:nth-child(2n){color:darkgreen;}   /* 짝수번째 자식 태그에 적용*/
+        li:nth-child(2n+1){color:orange;}    /* 홀수번째 자식 태그에 적용 */
+    </style>
+</head>
+<body>
+    <h3>Web Programming</h3>
+    <hr>
+    <div>
+        <div>5월<strong>학습 내용</strong></div>
+        <ul>
+            <li>HTML</li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#"></a> Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
+        <div>월~금:10시~1시</div>
+    </div>
+    <ul>
+        <li>test1</li>
+        <li>test1</li>
+        <li>test1</li>
+        <li>test1</li>
+    </ul>
+    <input type="text" placeholder="예 또는 아니오">
+    <input type="button" value="확인">
+</body>
+</html>
