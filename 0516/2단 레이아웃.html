@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            margin:0 auto;
+            padding: 0;
+        }
+        #header{
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+        }
+        #contents{
+            width: 800px;
+            height: 500px;
+            background-color: skyblue;
+            float:left;
+        }
+        #sidebar{
+            width: 200px;
+            height: 500px;
+            background-color: aquamarine;
+            float: right;
+        }
+        .clearfix{
+            clear:both;
+        }
+        #footer{
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body id="container">
+    <header id="header">
+        <h1>사이트 제목</h1>
+    </header>
+    <section id="contents">
+        <h2>본문</h2>
+        <p>Instructions: Review the underlined text. If it makes the statement correct, select "No change is needed". If the statement is incorrect, select the answer choice that makes the statement correct.</p>
+    </section>
+    <aside id="sidebar">
+        <h2>사이드바</h2>
+        <ul>
+            <li>사이드1</li>
+            <li>사이드2</li>
+            <li>사이드3</li>
+        </ul>
+    </aside>
+    <div class="clearfix"></div>
+    <footer id="footer">
+        <h2>푸터</h2>
+        <p>푸터내용</p>
+    </footer>
+</body>
+</html>

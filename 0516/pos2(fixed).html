@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixed</title>
+    <style>
+        .box1{
+            width:300px;
+            height:300px;
+            background-color: palegreen;
+        }
+        .parent-fixed{
+            width: 300px;
+            height:300px; /* 체크사항 3번 확인-주석처리하면 보이지 않게 됨*/
+            background-color: antiquewhite;
+        }
+        .child-fixed{
+            position:fixed; 
+            width: 100px;
+            height:100px;
+            background-color: blueviolet;
+            margin-top: 100px;  /* 체크사항 1번 - 부모에는 적용안됨 */
+            top:100px; /* 체크사항 2번 - 적용됨 */
+        }
+        .box2{
+            width:300px;
+            height:500px;
+            background-color: plum;
+        }
+    </style>
+</head>
+<!-- 2.fixed
+    :지정한 위치에 고정해 배치 화면에서 요소가 잘릴 수 있음
+    - top버튼,스크롤해도 내려오는 메뉴
+    - 3차원 속성  ->  float 사용하면 위치 지정 가능
+    [3가지 체크사항]
+    1)부모 자식 간 마진이 병합 가능한지 ------ X
+    2)top,right,bottom,left 속성 사용 가능한지------ O (브라우저 기준)
+    3) 자식 높이가 부모 높이에 영향을 주는지 ------ X
+-->
+<body>
+<div class="box1"></div>   
+
+<div class="parent-fixed">
+    <div class="child-fixed"></div>
+</div> 
+
+<div class="box2"></div>   
+</body>
+</html>
