@@ -1,0 +1,64 @@
+@charset "utf-8";
+body,h1,p{
+    margin:0;
+    padding:0;
+}
+/* position: static fixed */
+.intro{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: fixed; 
+}
+.intro h1{
+    width: 50%;
+    height: 100%;
+    background-color: skyblue;
+}
+.intro nav{
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+}
+.intro nav ul{
+    list-style: none;
+    display: flex;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+.intro nav ul li{
+    width:33.3333%;
+}
+.intro nav ul li:nth-child(1){
+    background-color: pink;
+}
+.intro nav ul li:nth-child(2){
+    background-color: violet;
+}
+.intro nav ul li:nth-child(3){
+    background-color: blueviolet;
+}
+.main{
+    width: 100%;
+    height: 800px;
+    background-color: tomato;
+    padding-top:90px;
+    /* intro에 가려지지 않게 intro보다 크게 padding을 줌 */
+}
+
+/* 768px 보다 작을 때 header가 2단으로 바뀌도록 설정 */
+@media(max-width:768px){
+    .intro{
+        height:160px;
+        flex-direction: column;
+        position:static;
+    }
+    .intro h1, .intro nav{
+        width: 100%;
+    }
+    .main{
+        padding-top:0;
+        background-color: antiquewhite;
+    }
+}
