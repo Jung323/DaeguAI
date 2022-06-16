@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩 조건문</title>
+</head>
+<body>
+    <!-- 
+    if(조건문1){
+        if(조건문2){
+            실행문1
+        }else{
+            실행문2
+        }
+    }else{
+        if(조건문3){
+            실행문3
+        }else{
+            실행문4
+        }
+    } -->
+
+    <!-- <script>
+        const date = new Date()
+        const hours = date.getHours()
+        if(hours < 11){
+            alert("아침식사 시간입니다")
+        }else{
+            if(hours <= 17){
+                alert("점심식사 시간입니다")
+            }else{
+                alert("저녁식사 시간입니다")
+            }
+            }
+    </script> -->
+
+    
+    <!-- 
+    if(조건문){
+        실행문1
+    }else if(조건문){
+        실행문2
+    }else{
+        실행문3
+    } -->
+
+
+    <script>
+        const date = new Date()
+        const hours = date.getHours()
+        if(hours < 11){
+            alert("아침식사 시간입니다")
+        }else if(hours <= 17){
+                alert("점심식사 시간입니다")
+        }else{
+            alert("저녁식사 시간입니다")
+        }
+    </script>
+</body>
+</html>
