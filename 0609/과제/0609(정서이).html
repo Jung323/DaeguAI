@@ -1,0 +1,26 @@
+<script>
+    fsk=[1,2,3,4,5,6,7,8,9,10]
+
+    console.log('1.순서대로 출력')
+    document.write('1.순서대로 출력:  ')
+    for(i=0;i<(fsk.length);i++){
+        console.log(fsk[i])
+        document.write(fsk[i],' ')
+    }
+    
+    console.log('2.거꾸로 출력')
+    document.write('2.거꾸로 출력:  ')
+    for(i=(fsk.length-1);i>=0;i--){
+        console.log(fsk[i])
+        document.write(fsk[i],' ')
+    }
+
+    console.log('3.짝수만 출력')
+    document.write('3.짝수만 출력:  ')
+    for(i of fsk){
+        if(i%2==0){
+            console.log(i)
+            document.write(i,' ')
+        }
+    }
+</script>
